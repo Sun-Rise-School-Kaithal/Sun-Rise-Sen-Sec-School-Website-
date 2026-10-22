@@ -838,7 +838,7 @@ picture { display: contents; }
 /* ---------- Mandatory disclosure ---------- */
 .disclosure-page { max-width: 1000px; }
 .disclosure-h { font-size: 1.6rem; margin-bottom: 16px; }
-.disclosure-sub { font-size: 1.1rem; margin: 28px 0 12px; }
+.disclosure-sub { font-size: 1.1rem; margin: 28px 0 12px; scroll-margin-top: 110px; }
 .disclosure td.indent { padding-left: 42px; color: var(--muted); }
 
 /* ---------- Intro screen ----------
