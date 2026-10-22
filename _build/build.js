@@ -361,7 +361,7 @@ function layout(page, body) {
   <link rel="apple-touch-icon" href="assets/img/icon-180.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
+${page.file === "index.html" ? `  <link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp" fetchpriority="high">\n` : ""}  <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.min.css">${preload}
   ${ld}
@@ -370,7 +370,7 @@ function layout(page, body) {
   <a class="skip-link" href="#main">Skip to content</a>
 ${page.file === "index.html" ? `  <div class="intro-screen" role="dialog" aria-label="Welcome to Sun Rise Senior Secondary School">
     <div class="intro-screen__inner">
-      <div class="intro-screen__logo"><span></span></div>
+      <div class="intro-screen__logo"><img src="assets/img/logo.webp" alt="" width="230" height="204" fetchpriority="high"></div>
       <p class="intro-screen__name">Sun Rise Senior Secondary School</p>
       <p class="intro-screen__meta">Kaithal, Haryana<i></i>CBSE Affiliation No. 531671</p>
       <span class="intro-screen__rule"></span>
@@ -399,7 +399,7 @@ ${page.file === "index.html" ? `  <div class="intro-screen" role="dialog" aria-l
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html" aria-label="${SITE.name} — Home">
-        <img src="assets/img/logo-sm.png" alt="Sun Rise Sr. Sec. School logo" width="128" height="114">
+        <img src="assets/img/logo-sm.webp" alt="Sun Rise Sr. Sec. School logo" width="128" height="114" fetchpriority="high">
         <span><span class="brand__name">Sun Rise Sr. Sec. School</span><span class="brand__sub">MAGHO MAJRI · KAITHAL · CBSE</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">${ICONS.menu}</button>
@@ -422,7 +422,7 @@ ${body}
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="assets/img/logo-sm.png" alt="" width="128" height="114" loading="lazy">
+          <img src="assets/img/logo-sm.webp" alt="" width="128" height="114" loading="lazy">
           <div><strong>Sun Rise Sr. Sec. School</strong><span>Magho Majri, Kaithal (Haryana)</span></div>
         </div>
         <p>A CBSE-affiliated co-educational school from Nursery to Class XII, nurturing young minds in Kaithal since ${SITE.founded}. <em>“${SITE.motto}.”</em></p>

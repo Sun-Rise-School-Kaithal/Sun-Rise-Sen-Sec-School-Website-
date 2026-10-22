@@ -38,6 +38,7 @@
   <link rel="apple-touch-icon" href="assets/img/icon-180.png">
   <link rel="manifest" href="site.webmanifest">
 
+  <link rel="preload" as="image" href="assets/img/logo.webp" type="image/webp" fetchpriority="high">
   <link rel="preload" href="assets/fonts/plus-jakarta-sans.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/style.min.css">
@@ -49,7 +50,7 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="intro-screen" role="dialog" aria-label="Welcome to Sun Rise Senior Secondary School">
     <div class="intro-screen__inner">
-      <div class="intro-screen__logo"><span></span></div>
+      <div class="intro-screen__logo"><img src="assets/img/logo.webp" alt="" width="230" height="204" fetchpriority="high"></div>
       <p class="intro-screen__name">Sun Rise Senior Secondary School</p>
       <p class="intro-screen__meta">Kaithal, Haryana<i></i>CBSE Affiliation No. 531671</p>
       <span class="intro-screen__rule"></span>
@@ -78,7 +79,7 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="/" aria-label="Sun Rise Sr. Sec. School — Home">
-        <img src="assets/img/logo-sm.png" alt="Sun Rise Sr. Sec. School logo" width="128" height="114">
+        <img src="assets/img/logo-sm.webp" alt="Sun Rise Sr. Sec. School logo" width="128" height="114" fetchpriority="high">
         <span><span class="brand__name">Sun Rise Sr. Sec. School</span><span class="brand__sub">MAGHO MAJRI · KAITHAL · CBSE</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
@@ -142,7 +143,7 @@
         </div>
         <div class="hs__overlay">
           <div class="container hs__content">
-            <img class="hs__logo" src="assets/img/logo.png" alt="" width="230" height="204">
+            <img class="hs__logo" src="assets/img/logo.webp" alt="" width="230" height="204" fetchpriority="high">
             <h1 class="hs__title">Sun Rise Senior Secondary School</h1>
             <p class="hs__place">KAITHAL, Haryana</p>
             <p class="hs__aff">C.B.S.E. Affiliation No. 531671 <span>(Pre-School to XII)</span></p>
@@ -485,7 +486,7 @@
     <div class="container footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="assets/img/logo-sm.png" alt="" width="128" height="114" loading="lazy">
+          <img src="assets/img/logo-sm.webp" alt="" width="128" height="114" loading="lazy">
           <div><strong>Sun Rise Sr. Sec. School</strong><span>Magho Majri, Kaithal (Haryana)</span></div>
         </div>
         <p>A CBSE-affiliated co-educational school from Nursery to Class XII, nurturing young minds in Kaithal since 2005. <em>“Rise Together and Shine Together.”</em></p>
